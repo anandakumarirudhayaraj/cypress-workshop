@@ -1,0 +1,19 @@
+{
+  "name": "cypress-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dijkstraj/cypress-workshop.git"
+  },
+  "author": "Jogchem Dijkstra <jogchem@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/dijkstraj/cypress-workshop/issues"
+  },
+  "homepage": "https://github.com/dijkstraj/cypress-workshop#readme"
+}
