@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dijkstraj/cypress-workshop/issues"
   },
-  "homepage": "https://github.com/dijkstraj/cypress-workshop#readme"
+  "homepage": "https://github.com/dijkstraj/cypress-workshop#readme",
+  "devDependencies": {
+    "cypress": "^3.1.5"
+  }
 }
