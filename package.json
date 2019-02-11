@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dijkstraj/cypress-workshop#readme",
   "devDependencies": {
-    "cypress": "^3.1.5"
+    "cypress": "^3.1.5",
+    "cypress-cucumber-preprocessor": "^1.10.0"
   }
 }
