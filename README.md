@@ -3,10 +3,13 @@
 ## Setup
 
 ```bash
-git clone https://github.com/dijkstraj/cypress-workshop.git
-cd cypress-workshop
-npm install --save-dev cypress
-$(npm bin)/cypress open
+git clone https://github.com/dijkstraj/cypress-example-kitchensink.git
+cd cypress-example-kitchensink
+npm install
+npm start
+
+# en in een andere tab:
+npm run cy:open
 ```
 
 Cypress zet een hele lijst voorbeelden neer in `cypress/integration/examples/`,
@@ -21,11 +24,14 @@ Je ziet hier de standaardopbouw van een Cypress test:
 * Chai assertions in `should()`
 * Alle Cypress commando's zitten in `cy`
 
-Elk voorbeeld heeft een bijbehorende pagina in de [Kitchen Sink](https://example.cypress.io/) waar de tests op uitgevoerd worden.
+Elk voorbeeld heeft een bijbehorende pagina in de `app/commands/` waar de tests op uitgevoerd worden.
 Deze pagina bevat ook een klein beetje meer informatie over de tests.
 
 Werk door de andere voorbeelden heen om een gevoel te krijgen van wat Cypress kan,
 maar laat `network_requests.spec.js` nog even met rust.
+
+Alle tests zijn groen als je het project uitcheckt,
+maar je kunt ze natuurlijk kapotmaken door de HTML aan te passen.
 
 Je kun ook zelf een formulier maken om mee te spelen.
 Gebruik [Google Forms](https://forms.google.com) om snel iets in elkaar te hacken met verschillende input-componenten
@@ -65,7 +71,6 @@ module.exports = (on, config) => {
 Je kunt nu feature files in `cypress/integration/` en step definitions in `cypress/support/step_definitions/` zetten.
 
 Een voorbeeldje om je op weg te helpen:
-
 
 ```gherkin
 # cypress/integration/answer.feature
@@ -123,3 +128,5 @@ then('I find {string}', expected => {
 ```
 
 Probeer ook eens [Wolfram|Alpha](https://www.wolframalpha.com) of [Math@StackExchange](https://math.stackexchange.com/) te gebruiken in een test en laat me weten als het lukt 😆
+
+Als verdere oefening kun je een aantal voorbeeldtests porten naar Gherkin.
